@@ -273,8 +273,8 @@
         <hook src="src/hooks/support-kotlin.js" type="after_plugin_install" />
         <framework src="org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version" />
         <apply-plugin>kotlin-android</apply-plugin>
+         <apply-plugin>kotlin-kapt</apply-plugin>
         <apply-plugin>kotlin-android-extensions</apply-plugin>
-        <apply-plugin>kotlin-kapt</apply-plugin>
         <apply-plugin>kotlin-allopen</apply-plugin>
         <apply-plugin>jacoco</apply-plugin>
 
