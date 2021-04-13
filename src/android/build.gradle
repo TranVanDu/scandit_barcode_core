@@ -1,0 +1,19 @@
+android {
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+  }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', 'src/main/libs'
+    }
+}
+
+dependencies {
+   }
+
+allOpen {
+    // allows mocking for classes w/o directly opening them for release builds
+    annotation 'com.scandit.datacapture.cordova.core.testing.OpenClass'
+}
